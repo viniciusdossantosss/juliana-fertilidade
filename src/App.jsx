@@ -270,9 +270,10 @@ function App() {
                   <h3 className="text-lg font-semibold text-gray-900">{treatment.title}</h3>
                   <p className="text-sm text-gray-600">{treatment.description}</p>
                   <Button 
+                    onClick={() => window.open('https://api.whatsapp.com/send/?phone=5571983442024&text&type=phone_number&app_absent=0', '_blank')}
                     variant="outline" 
                     size="sm" 
-                    className="mt-4 group-hover:bg-green-600 group-hover:text-white transition-colors"
+                    className="cursor-pointer mt-4 group-hover:bg-green-600 group-hover:text-white transition-colors"
                   >
                     Faça uma Avaliação
                   </Button>
